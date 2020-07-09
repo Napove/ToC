@@ -4,6 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <style>
+    ol ol{
+      list-style: lower-roman;
+    }
+    ol{
+      list-style: upper-roman;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,17 +29,34 @@
   6. Change the nested list numbering to roman numerals
   -->
 
-  <h1>Some kind of article</h1>
+  <h1 id="top-heading-1">Some kind of article</h1>
 
-  <h2>Table of contents</h2>
+    <ol>
+      <li>
+        <a href="#first-heading">First Heading</a>
+        <ol>
+          <li><a href="#sub-heading-1-1">Sub Heading 1.1</a></li>
+        </ol>
+      </li>
+      <li>
+        Second Heading
+        <ol>
+          <li><a href="#sub-heading-2-1">Sub Heading 2.1</a> </li>
+          <li><a href="#sub-heading-2-2">Sub Heading 2.2</a></li>
+          <li><a href="#sub-heading-2-3">Sub Heading 2.3</a></li>
+        </ol>
+      </li>
+    </ol>
+
+  <h2 id="table-contents">Table of contents</h2>
   <!-- Add the TOC list here -->
 
   First Heading Sub Heading 1.1 Second Heading Sub Heading 2.1 Sub Heading 2.2 Sub Heading 2.3
 
   <!-- End TOC list -->
-  <h2>First Heading</h2>
+  <h2 id="first-heading">First Heading</h2>
 
-  <h3>Sub Heading 1.1</h3>
+  <h3 id="sub-heading-1-1">Sub Heading 1.1</h3>
 
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus architecto nihil officiis tenetur!
     Reprehenderit, ipsa
@@ -84,8 +109,8 @@
     sit sequi deserunt rem fuga quidem reiciendis quos ipsa expedita atque tenetur et iure! Facere sint, nihil
     cupiditate
     nisi tenetur, voluptatibus error aperiam quibusdam at saepe odio repellat animi!</p>
-
-  <h3>Sub Heading 1.2</h3>
+    <a href="#top-heading-1">Back to top</a>
+  <h3 id="sub-heading-1-2">Sub Heading 1.2</h3>
 
   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati excepturi est voluptatibus! Iusto accusamus
     maxime
@@ -134,10 +159,10 @@
     laudantium, ipsam asperiores atque nulla ut culpa neque deleniti amet similique optio quasi inventore. Quae, unde
     doloremque
     maiores ea voluptas hic neque ab veritatis. Nobis, debitis.</p>
+    <a href="#top-heading-1">Back to top</a>
+  <h2 id="second-heading">Second Heading</h2>
 
-  <h2>Second Heading</h2>
-
-  <h3>Sub Heading 2.1</h3>
+  <h3 id="sub-heading-2-1">Sub Heading 2.1</h3>
 
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates suscipit maiores praesentium architecto
     sequi
@@ -187,8 +212,8 @@
     nostrum
     nam ad vitae autem illum mollitia perspiciatis fuga itaque eum necessitatibus ducimus consequatur quis, accusantium,
     omnis impedit iste adipisci numquam quo possimus.</p>
-
-  <h3>Sub Heading 2.2</h3>
+    <a href="#top-heading-1">Back to top</a>
+  <h3 id="sub-heading-2-2">Sub Heading 2.2</h3>
   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque dolorem dolores, magnam ipsa deleniti temporibus
     dignissimos
     voluptatibus deserunt minima debitis molestias recusandae nesciunt eum aliquam ex. Adipisci, error quibusdam?
@@ -228,8 +253,9 @@
     alias
     sed qui itaque autem cum cupiditate fugit odit explicabo quibusdam, provident possimus officiis consectetur incidunt
     ullam repellat iste?</p>
+    <a href="#top-heading-1">Back to top</a>
 
-  <h3>Sub Heading 2.3</h3>
+  <h3 id="sub-heading-2-3">Sub Heading 2.3</h3>
 
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis sunt, numquam nisi totam illo maxime suscipit
     eos?
@@ -276,6 +302,7 @@
     asperiores minima, nihil, soluta veniam magnam quam sapiente iure sunt molestiae? Fuga voluptatem, adipisci modi id
     illum
     enim libero maiores soluta, autem cumque magni quam deleniti nulla!</p>
+    <a href="#top-heading-1">Back to top</a>
 </body>
 
 </html>
